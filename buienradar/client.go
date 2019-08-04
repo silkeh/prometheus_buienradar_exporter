@@ -1,8 +1,8 @@
 package buienradar
 
 import (
-	"net/http"
 	"encoding/json"
+	"net/http"
 )
 
 // Client is a HTTP client for the Buienradar API
@@ -12,7 +12,7 @@ type Client struct {
 
 // NewClient creates a new HTTP client for the Buienradar API
 func NewClient(cli *http.Client) *Client {
-	return &Client{	Client: cli}
+	return &Client{Client: cli}
 }
 
 // Get retrieves the latest data from the Buienradar API

@@ -68,7 +68,7 @@ type StationMeasurement struct {
 	RainFallLast24Hour   float64 `json:"rainFallLast24Hour"`
 	RainFallLastHour     float64 `json:"rainFallLastHour"`
 	Winddirectiondegrees int     `json:"winddirectiondegrees"`
-	Dayhistory struct {
+	Dayhistory           struct {
 		Timestamp               string  `json:"timestamp"`
 		TemperatureMin          float64 `json:"temperatureMin"`
 		TemperatureMax          float64 `json:"temperatureMax"`

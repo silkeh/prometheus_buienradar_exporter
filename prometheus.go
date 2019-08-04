@@ -1,11 +1,12 @@
 package main
 
 import (
-	"github.com/prometheus/client_golang/prometheus"
-	"git.slxh.eu/prometheus/buienradar_exporter/buienradar"
+	"log"
 	"net/http"
 	"time"
-	"log"
+
+	"git.slxh.eu/prometheus/buienradar_exporter/buienradar"
+	"github.com/prometheus/client_golang/prometheus"
 )
 
 // Namespace is the namespace for the Prometheus metrics
