@@ -67,6 +67,12 @@ func NewExporter(regions []string) *Exporter {
 				func(s *buienradar.StationMeasurement) float64 {
 					return s.Windspeed
 				}),
+			NewMetric(
+				"sun_power",
+				"Solar Power in W/m²",
+				func(s *buienradar.StationMeasurement) float64 {
+					return s.Sunpower
+				}),
 		},
 	}
 }
